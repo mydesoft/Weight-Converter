@@ -6,13 +6,11 @@ const convertedOutput = document.getElementById('output');
 
 
 const weightConversionHandler = (event) => {
-
-    // console.log(convertedOutput);
-    // convertedOutput.classList.add('invisible');
+    
     const poundsValue = event.target.value;
+    
     convertedOutput.classList.remove('invisible');
-
-
+    
     const convertedKilogramUnit = poundsValue * 0.453592;
     kilogramUnit.innerText = `Kilogram : ${convertedKilogramUnit}`;
 
@@ -25,3 +23,7 @@ const weightConversionHandler = (event) => {
 }
 
 pounceUnit.addEventListener('input', weightConversionHandler);
+
+document.querySelector('form').addEventListener('submit', (event)=>{
+    event.preventDefault();
+});
