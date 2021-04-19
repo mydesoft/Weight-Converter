@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+<body style="background: #333;">
+    <h4 class="text-center text-white mt-3 mb-3">Weight Converter</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form >
+                    <div class="form-group mb-3">
+                        <input type="number" id = "pounds-unit" class="form-control" placeholder="Enter Weight in Pounds">
+                    </div>
+                </form>
+
+                <div class="invisible" id="output">
+                <div class="card bg-primary mb-2">
+                    <div class="card-body">
+                        <h6 class="text-white" id="kilogram-unit"></h6>
+                    </div>
+                </div>
+
+                <div class="card bg-success mb-2">
+                    <div class="card-body">
+                        <h6 class="text-white" id="ounce-unit"></h6>
+                    </div>
+                </div>
+
+                <div class="card bg-danger mb-2">
+                    <div class="card-body">
+                        <h6 class="text-white" id="gram-unit"></h6>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
